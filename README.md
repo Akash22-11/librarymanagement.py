@@ -1,5 +1,5 @@
 # librarymanagement.py
-A library management system 
+A library management system
 
 """
 Project: Student library management system
