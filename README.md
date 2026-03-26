@@ -8,7 +8,7 @@ Project: Student library management system
 
 class Library:
     def __init__(self, listofBooks):
-        self.books = listofBooks
+        self.books = listofbooks
 
     def displayAvailableBooks(self):
         print(f"\n{len(self.books)} AVAILABLE BOOKS ARE: ")
