@@ -1,97 +1,166 @@
-# librarymanagement.py
-A library management system
+<!-- HERO -->
 
-"""
-Project: Student library management system
-"""
+<h1 align="center">📚 LIBRARY MANAGEMENT SYSTEM</h1>
 
+<h3 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=600&lines=Manage+Books+Like+a+Pro;Borrow+•+Return+•+Donate;Built+With+Python+⚡;Simple+CLI+System"/>
+</h3>
 
-class Library:
-    def __init__(self, listofBooks):
-        self.books = listofbooks
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Project-blue?style=for-the-badge&logo=python"/>
+  <img src="https://img.shields.io/badge/CLI-Based-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/OOP-Concepts-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Learning-Project-orange?style=for-the-badge"/>
+</p>
 
-    def displayAvailableBooks(self):
-        print(f"\n{len(self.books)} AVAILABLE BOOKS ARE: ")
-        for book in self.books:
-            print(" ♦-- " + book)
-        print("\n")
+<p align="center">
+  <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="500"/>
+</p>
 
-    def borrowBook(self, name, bookname):
-        if bookname not in self.books:
-            print(
-                f"{bookname} BOOK IS NOT AVAILABLE EITHER TAKEN BY SOMEONE ELSE, WAIT UNTIL HE RETURNED.\n")
-        else:
-            track.append({name: bookname})
-            print("BOOK ISSUED : THANK YOU KEEP IT WITH CARE AND RETURN ON TIME.\n")
-            self.books.remove(bookname)
+<p align="center">
+  <b>📖 Read • Borrow • Return • Repeat</b><br>
+  A simple system to manage books efficiently
+</p>
 
-    def returnBook(self, bookname):
-        print("BOOK RETURNED : THANK YOU! \n")
-        self.books.append(bookname)
+---
 
-    def donateBook(self, bookname):
-        print("BOOK DONATED : THANK YOU VERY MUCH, HAVE A GREAT DAY AHEAD.\n")
-        self.books.append(bookname)
+## 🧠 About The Project
 
+This is a **command-line based Library Management System** built using Python.
 
-class Student():
-    def requestBook(self):
-        print("So, you want to borrow book!")
-        self.book = input("Enter name of the book you want to borrow: ")
-        return self.book
+It allows users to:
 
-    def returnBook(self):
-        print("So, you want to return book!")
-        name = input("Enter your name: ")
-        self.book = input("Enter name of the book you want to return: ")
-        if {name: self.book} in track:
-            track.remove({name: self.book})
-        return self.book
+* View available books
+* Borrow books
+* Return books
+* Donate books
+* Track issued books
 
-    def donateBook(self):
-        print("Okay! you want to doante book!")
-        self.book = input("Enter name of the book you want to donate: ")
-        return self.book
+The project is designed to practice:
 
+* Object-Oriented Programming
+* User interaction
+* Basic data handling
 
-if __name__ == "__main__":
+---
 
-    Delhilibrary = Library(
-        ["vistas", "invention", "rich&poor", "indian", "macroeconomics", "maths" , "microeconomics"])
-    student = Student()
-    track = []
+## 🚀 Features
 
-    print("\t\t\t\t\t\t\t♦♦♦♦♦♦♦ WELCOME TO THE DELHI LIBRARY ♦♦♦♦♦♦♦\n")
-    print("""CHOOSE WHAT YOU WANT TO DO:-\n1. Listing all books\n2. Borrow books\n3. Return books\n4. Donate books\n5. Track books\n6. exit the library\n""")
+<div align="center">
 
-    while (True):
-        # print(track)
-        try:
-            usr_response = int(input("Enter your choice: "))
+| 📌 Feature    | 💡 Description              |
+| ------------- | --------------------------- |
+| 📚 View Books | Display all available books |
+| 📥 Borrow     | Issue books to students     |
+| 📤 Return     | Return issued books         |
+| 🎁 Donate     | Add new books               |
+| 🔍 Track      | See who borrowed what       |
 
-            if usr_response == 1:  # listing
-                Delhilibrary.displayAvailableBooks()
-            elif usr_response == 2:  # borrow
-                Delhilibrary.borrowBook(
-                    input("Enter your name: "), student.requestBook())
-            elif usr_response == 3:  # return
-                Delhilibrary.returnBook(student.returnBook())
-            elif usr_response == 4:  # donate
-                Delhilibrary.donateBook(student.donateBook())
-            elif usr_response == 5:  # track
-                for i in track:
-                    for key, value in i.items():
-                        holder = key
-                        book = value
-                        print(f"{book} book is taken/issued by {holder}.")
-                print("\n")
-                if len(track) == 0:
-                    print("NO BOOKS ARE ISSUED!. \n")
-            
-            elif usr_response == 6: #exit
-                print("THANK YOU ! \n")
-                exit()
-            else:
-                print("INVAILD INPUT! \n")
-        except Exception as e:              #catch errors
-            print(f"{e}---> INVALID INPUT! \n")
+</div>
+
+---
+
+## ⚙️ How It Works
+
+```text id="9l0l4o"
+User Input → System Process → Book Updated → Track Updated 🔁
+```
+
+---
+
+## 🧩 Core Concepts Used
+
+* Classes & Objects
+* Lists & Dictionaries
+* Exception Handling
+* Loops & Conditions
+
+---
+
+## 📂 Project Structure
+
+```bash id="q6a2kn"
+librarymanagement.py   # Main system file
+README.md              # Project documentation
+```
+
+---
+
+## ▶️ How to Run
+
+### 🔧 Requirements
+
+* Python 3.x
+
+---
+
+### ▶️ Run the Program
+
+```bash id="2u6r5z"
+python librarymanagement.py
+```
+
+---
+
+## 💻 Example Menu
+
+```
+1. Listing all books
+2. Borrow books
+3. Return books
+4. Donate books
+5. Track books
+6. Exit
+```
+
+---
+
+## 📊 Sample Output
+
+```
+♦♦♦♦♦♦♦ WELCOME TO THE DELHI LIBRARY ♦♦♦♦♦♦♦
+
+AVAILABLE BOOKS:
+♦-- vistas
+♦-- maths
+♦-- macroeconomics
+```
+
+---
+
+## 🔥 Learning Value
+
+> “A simple system that teaches real-world logic.”
+
+✔ Builds strong Python basics
+✔ Introduces system design
+✔ Improves problem-solving
+
+---
+
+## ⚠️ Known Issues (Be Honest = Better Marks)
+
+* Case-sensitive book names
+* No database (data resets on restart)
+* Basic UI (CLI only)
+
+---
+
+## 🔮 Future Improvements
+
+* 💾 Database integration
+* 🖥 GUI (Tkinter / PyQt)
+* 🔐 Login system
+* 📱 Web version
+
+---
+
+## 👨‍💻 Author
+
+**Akash**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Made%20With-📚-black?style=for-the-badge"/>
+</p>
+
+---
