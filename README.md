@@ -118,7 +118,7 @@ python librarymanagement.py
 ## 📊 Sample Output
 
 ```
-♦♦♦♦♦♦♦ WELCOME TO THE DELHI LIBRARY ♦♦♦♦♦♦♦
+♦♦♦♦♦♦♦ WELCOME TO THE LIBRARY ♦♦♦♦♦♦♦
 
 AVAILABLE BOOKS:
 ♦-- vistas
